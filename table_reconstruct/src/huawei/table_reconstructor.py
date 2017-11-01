@@ -108,6 +108,14 @@ class TableReconstructor(object):
         self.ignored_lines = len(ignored_rows)
         self.illegal_lines = len(illegal_rows)
 
+    def _set_org_columns(self):
+        columns = []
+        for i in range(len(self.name_row)):
+            column = Column(self.name_row[i], [])
+            for row in self.data_rows:
+                column.add_value(row[i])
+        return columns
+
     def do_reconstruct(self, index, count, sort, data):
         ''' 数据表打横业务
 
@@ -129,10 +137,19 @@ class TableReconstructor(object):
             result.set_err_no(format_code)
             return result
 
+        # set total, ignored, illegal
         result.set_total_lines(self.total_lines)
         result.set_ignored_lines(self.ignored_lines)
         result.set_illegal_lines(self.illegal_lines)
         if self.ignored_lines + self.illegal_lines == self.total_lines:
             return result
-        
+
+        '''process columns'''
+        # set origin columns
+        org_columns = self._set_org_columns()
+        for column in org_columns:
+            assert isinstance(column, Column)
+            result.add_column(column)
+
+        # set ext columns
         return result
