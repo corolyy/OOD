@@ -116,6 +116,44 @@ class TableReconstructor(object):
                 column.add_value(row[i])
         return columns
 
+    def extend_column(self, column):
+        assert isinstance(column, Column)
+        base_name = column.get_column_name()
+        base_values = column.get_values()
+
+        # get keys and sort
+        key_set = {value for value in base_values}
+        keys = list(key_set)
+        if self.sort == 0:
+            keys.sort() # alphabetic
+        elif self.sort == 1:
+            # sort by frequency then alphabetic
+            frequence_map = {}
+            for key in base_values:
+                if key not in frequence_map:
+                    frequence_map[key] = 1
+                else:
+                    frequence_map[key] += 1
+            keys.sort(cmp=lambda x, y:
+                True if frequence_map[x] > frequence_map[y] or
+                    (frequence_map[x] == frequence_map[y] and x > y)
+                else False)
+
+        # get reserved keys
+        if self.count == 0 or self.count > len(keys):
+            reserved_keys = keys
+        else:
+            reserved_keys = keys[:self.count]
+
+        # generate new columns
+        ext_columns = []
+        for key in reserved_keys:
+            name = 'Flag_{0}_{1}'.format(base_name, key)
+            values =  ['True' if value == key else 'False'
+                       for value in base_values]
+            ext_columns.append(Column(name, values))
+        return ext_columns
+
     def do_reconstruct(self, index, count, sort, data):
         ''' 数据表打横业务
 
@@ -152,4 +190,8 @@ class TableReconstructor(object):
             result.add_column(column)
 
         # set ext columns
+        for index in self.index:
+            pre_column = result.table.columns[index]
+            ext_columns = self.extend_column(pre_column)
+            map(result.add_column, ext_columns)
         return result
