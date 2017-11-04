@@ -49,6 +49,9 @@ class TableReconstructor(object):
         self.name_row = raw_lines[0].split(self.COL_SP)
         self.type_row = raw_lines[1].split(self.COL_SP)
         self.def_row = raw_lines[2].split(self.COL_SP)
+        print 'name_row: ', self.name_row
+        print 'type_row: ', self.type_row
+        print 'def_row: ', self.def_row
         # check index is valid: --> list
         if not isinstance(self.index, (int, str)):
             return 1 #  index err
@@ -70,8 +73,9 @@ class TableReconstructor(object):
         # check meta col num equal
         meta_len_set = {len(self.name_row), len(self.type_row),
                         len(self.def_row)}
-        if len(meta_len_set) == 1:
+        if len(meta_len_set) != 1:
             return 2  # meta rows should have same col num
+        print 'meta_len: ', meta_len_set
         # check type and def match
         self.type_row = [t.lower() or 'string' for t in self.type_row]
         for i in range(len(self.def_row)):
@@ -81,6 +85,11 @@ class TableReconstructor(object):
                     return 2 # type and def not match
             else:
                 self.def_row[i] = None # if no def set to Noe
+        print '==== meta row after process'
+        print 'name_row: ', self.name_row
+        print 'type_row: ', self.type_row
+        print 'def_row: ', self.def_row
+        print 'index', self.index
 
         '''process data lines'''
         self.total_lines = len(raw_lines) - 3
@@ -90,30 +99,36 @@ class TableReconstructor(object):
         self.data_rows = []
         for i in range(3, len(raw_lines)):
             line_items = raw_lines[i].split(self.COL_SP)
+            print 'line {}: {}'.format(i, line_items)
             if len(line_items) != len(self.name_row):
                 illegal_rows.append(i)  # col count not match
             else:
                 for j in range(len(line_items)):
                     if not line_items[j] and self.def_row[j] is None:
                         ignored_rows.append(i)  # no value and no default
+                        break
                     else:
                         value = line_items[j]
-                        type = self.type_row[j]
-                        if not check_type(type, value):
+                        tp = self.type_row[j]
+                        if not check_type(tp, value):
                             illegal_rows.append(i) # type not match
+                            break
                         else:
                             # set to default
-                            line_items[j] = line_items[i] or self.def_row[j]
-                            self.data_rows.append(line_items)
+                            line_items[j] = line_items[j] or self.def_row[j]
+                self.data_rows.append(line_items)
         self.ignored_lines = len(ignored_rows)
         self.illegal_lines = len(illegal_rows)
+        return 0
 
     def _set_org_columns(self):
         columns = []
+        print 'pre data: ', self.data_rows
         for i in range(len(self.name_row)):
             column = Column(self.name_row[i], [])
             for row in self.data_rows:
                 column.add_value(row[i])
+            columns.append(column)
         return columns
 
     def extend_column(self, column):
@@ -151,6 +166,7 @@ class TableReconstructor(object):
             name = 'Flag_{0}_{1}'.format(base_name, key)
             values =  ['True' if value == key else 'False'
                        for value in base_values]
+            print '\t name: {}, values: {}'.format(name, values)
             ext_columns.append(Column(name, values))
         return ext_columns
 
@@ -171,8 +187,8 @@ class TableReconstructor(object):
         self.index, self.count, self.sort, self.data = index, count, sort, data
         # check whether error
         format_code = self._reformat()
+        result.set_err_no(format_code)
         if format_code != 0:
-            result.set_err_no(format_code)
             return result
 
         # set total, ignored, illegal
@@ -181,17 +197,29 @@ class TableReconstructor(object):
         result.set_illegal_lines(self.illegal_lines)
         if self.ignored_lines + self.illegal_lines == self.total_lines:
             return result
+        print 'err: {}, total: {}, ig: {}, ill: {}'.format(
+            result.err_no, result.total_lines, result.ignored_lines,
+            result.illegal_lines)
 
         '''process columns'''
         # set origin columns
         org_columns = self._set_org_columns()
+        print '==== org column'
         for column in org_columns:
             assert isinstance(column, Column)
+            print '\t name: {}, values: {}'.format(
+                column.column_name, column.values)
             result.add_column(column)
 
         # set ext columns
+        print '==== ext column'
         for index in self.index:
             pre_column = result.table.columns[index]
             ext_columns = self.extend_column(pre_column)
             map(result.add_column, ext_columns)
         return result
+
+tableR = TableReconstructor()
+data = 'Name,Gender;,;,Male;a,Male;b,Female'
+result = tableR.do_reconstruct('1', 2, 0, data)
+print result.err_no

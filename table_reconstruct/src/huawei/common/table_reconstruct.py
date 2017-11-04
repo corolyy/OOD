@@ -19,7 +19,7 @@ class TableReconstruct(object):
             return ''.join(err_no)
 
         totalLines = 'TotalLines:%s\r\n' % result.get_total_lines()
-        ignoredLines = 'IgnoreLines:%s\r\n' % result.get_ignored_lines()
+        ignoredLines = 'IgnoredLines:%s\r\n' % result.get_ignored_lines()
         illegalLines = 'IllegalLines:%s\r\n' % result.get_illegal_lines()
 
         rtn_list = []
@@ -29,7 +29,10 @@ class TableReconstruct(object):
         rtn_list.append(illegalLines)
 
         # 说明能被get到的column只包含正确的，illegal和ignore都被忽略了
-        max_row_index = totalLines - (ignoredLines + illegalLines) - 1
+        max_row_index = (result.get_total_lines() -
+                         (result.get_ignored_lines() +
+                          result.get_illegal_lines())
+                         - 1)
 
         if max_row_index > 0:
             columns = result.get_table().get_columns()

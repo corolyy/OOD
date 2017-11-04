@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3e7c945e-e526-4241-90b8-d5318aaba532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py" afterPath="$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py" afterPath="$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py" afterPath="$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,17 +16,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/OOD$table_reconstruct.coverage" NAME="table_reconstruct Coverage Results" MODIFIED="1509269132192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/huawei/common" />
-    <SUITE FILE_PATH="coverage/OOD$Unittests_for_autoTest_Test_testCase01.coverage" NAME="Unittests for autoTest.Test.testCase01 Coverage Results" MODIFIED="1509636757559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/testcase" />
-    <SUITE FILE_PATH="coverage/OOD$Unittests_in_autoTest_py.coverage" NAME="Unittests in autoTest.py Coverage Results" MODIFIED="1509375664433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/testcase" />
-    <SUITE FILE_PATH="coverage/OOD$table_reconstructor.coverage" NAME="table_reconstructor Coverage Results" MODIFIED="1509636348203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/huawei" />
+    <SUITE FILE_PATH="coverage/OOD$Unittests_for_autoTest_Test.coverage" NAME="Unittests for autoTest.Test Coverage Results" MODIFIED="1509809075489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/testcase" />
+    <SUITE FILE_PATH="coverage/OOD$Unittests_for_autoTest_Test_testCase01.coverage" NAME="Unittests for autoTest.Test.testCase01 Coverage Results" MODIFIED="1509809084833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/testcase" />
+    <SUITE FILE_PATH="coverage/OOD$Unittests_in_autoTest_py.coverage" NAME="Unittests in autoTest.py Coverage Results" MODIFIED="1509808657591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/testcase" />
+    <SUITE FILE_PATH="coverage/OOD$table_reconstructor.coverage" NAME="table_reconstructor Coverage Results" MODIFIED="1509808650294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/table_reconstruct/src/huawei" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="table_reconstructor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-569">
-              <caret line="154" column="26" lean-forward="false" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
+            <state relative-caret-position="202">
+              <caret line="184" column="28" lean-forward="false" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
               <folding>
                 <element signature="e#43#98#0" expanded="true" />
                 <element signature="e#374#900#0" expanded="false" />
@@ -43,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autoTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="223">
+              <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -56,8 +59,8 @@
       <file leaf-file-name="reconstruct_result.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="144">
+              <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -66,18 +69,18 @@
       <file leaf-file-name="table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="96">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table_reconstruct.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="table_reconstruct.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="-377">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -102,11 +105,11 @@
         <option value="$PROJECT_DIR$/table_reconstruct/src/huawei.py" />
         <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/common/column.py" />
         <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/common/table.py" />
-        <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py" />
         <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py" />
-        <option value="$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py" />
         <option value="$PROJECT_DIR$/table_reconstruct/src/README.md" />
         <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py" />
+        <option value="$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py" />
+        <option value="$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py" />
       </list>
     </option>
   </component>
@@ -116,7 +119,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -186,7 +189,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Algorithms" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -207,6 +210,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for autoTest.Test.testCase01">
+    <configuration name="Unittests for autoTest.Test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/table_reconstruct/src/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OOD" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;autoTest.Test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Unittests for autoTest.Test.testCase01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,18 +291,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.table_reconstruct" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in autoTest.py" />
       <item index="2" class="java.lang.String" itemvalue="Python.table_reconstructor" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for autoTest.Test.testCase01" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for autoTest.Test" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for autoTest.Test.testCase01" />
-        <item index="1" class="java.lang.String" itemvalue="Python.table_reconstructor" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for autoTest.Test" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in autoTest.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.table_reconstruct" />
+        <item index="3" class="java.lang.String" itemvalue="Python.table_reconstructor" />
+        <item index="4" class="java.lang.String" itemvalue="Python.table_reconstruct" />
       </list>
     </recent_temporary>
   </component>
@@ -305,18 +325,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.02 at 23h 32m 38s.xml">
+    <history-entry file="Unittests_for_autoTest_Test - 2017.11.04 at 23h 24m 35s.xml">
+      <configuration name="Unittests for autoTest.Test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 09m 27s.xml">
       <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_autoTest_py - 2017.10.29 at 17h 48m 34s.xml">
-      <configuration name="Unittests in autoTest.py" configurationId="tests" />
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 18m 56s.xml">
+      <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 19m 56s.xml">
+      <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 23m 10s.xml">
+      <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 24m 10s.xml">
+      <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_autoTest_Test_testCase01 - 2017.11.04 at 23h 24m 45s.xml">
+      <configuration name="Unittests for autoTest.Test.testCase01" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_autoTest_py - 2017.10.30 at 23h 01m 05s.xml">
       <configuration name="Unittests in autoTest.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_autoTest_py - 2017.11.04 at 23h 14m 58s.xml">
+      <configuration name="Unittests in autoTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_autoTest_py - 2017.11.04 at 23h 17m 37s.xml">
+      <configuration name="Unittests in autoTest.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20052083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -351,6 +392,108 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="154" column="26" lean-forward="false" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
+          <folding>
+            <element signature="e#43#98#0" expanded="true" />
+            <element signature="e#374#900#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/column.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="154" column="26" lean-forward="false" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
+          <folding>
+            <element signature="e#43#98#0" expanded="true" />
+            <element signature="e#374#900#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/column.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -541,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="96">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -555,26 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/table_reconstructor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-569">
-          <caret line="154" column="26" lean-forward="false" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
+        <state relative-caret-position="202">
+          <caret line="184" column="28" lean-forward="false" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
           <folding>
             <element signature="e#43#98#0" expanded="true" />
             <element signature="e#374#900#0" expanded="false" />
@@ -582,10 +709,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/reconstruct_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/table_reconstruct/src/testcase/autoTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="223">
+          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table_reconstruct/src/huawei/common/table_reconstruct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding />
         </state>
       </provider>
